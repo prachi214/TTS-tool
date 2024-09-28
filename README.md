@@ -35,5 +35,5 @@ This project is a React component that allows users to upload images, extract te
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/prachi214/image-to-text-extraction.git
-cd image-to-text-extraction
+git clone https://github.com/prachi214/OCR-tool.git
+cd OCR-tool

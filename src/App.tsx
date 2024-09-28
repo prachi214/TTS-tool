@@ -1,7 +1,7 @@
 
 import './App.css'
 import { MantineProvider} from '@mantine/core'
-import { Drager } from './component/dragzone';
+import { Dragger } from './component/dragzone';
 
 function App() {
 
@@ -9,7 +9,7 @@ function App() {
   return (
     <>
     <MantineProvider>
-<Drager/>
+<Dragger/>
 
     </MantineProvider>
     </>

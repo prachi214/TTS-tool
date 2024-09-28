@@ -5,7 +5,7 @@ import { IconUpload, IconPhoto, IconX } from '@tabler/icons-react';
 import { Dropzone, DropzoneProps, IMAGE_MIME_TYPE } from '@mantine/dropzone';
 import Tesseract from 'tesseract.js';
 
-export function Drager(props: Partial<DropzoneProps>) {
+export function Dragger(props: Partial<DropzoneProps>) {
   const [text, setText] = useState<string>('');
   const [loading, setLoading] = useState<boolean>(false);
 

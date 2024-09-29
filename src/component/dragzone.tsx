@@ -81,12 +81,12 @@ export function Dragger(props: Partial<DropzoneProps>) {
  <Card shadow="sm" padding="lg" radius="md" withBorder>
    <Card.Section>
      {loading ? (
-       <Text align="center" className="text-yellow-200">
+       <Text className="text-yellow-200">
          Processing image...
        </Text>
      ) : text ? (
-       <div className='text-white text-center'>
-         <Text weight={500} size="lg" align="center" mb="md" className='text-yellow-300 text-bold pb-2'>
+       <div className='text-white text-center font-bold'>
+         <Text  size="lg"  mb="md" className='text-yellow-300 text-bold pb-2'>
            Extracted Text
          </Text>
 
@@ -112,7 +112,7 @@ export function Dragger(props: Partial<DropzoneProps>) {
        </div>
      ) : (
       <div className='text-slate-50'>
-       <Text align="center" c="dimmed" className='!text-white-500' size='lg'>
+       <Text  c="dimmed" className='!text-white-500' size='lg'>
          No text extracted yet. Upload an image to see the extracted text here.
        </Text>
       </div>

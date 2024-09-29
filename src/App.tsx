@@ -22,12 +22,7 @@ function App() {
 
     </MantineProvider>
     </span>
-    {/* <MantineProvider>
 
-<Dragger/>
-<OrbitingCirclesDemo/>
-
-    </MantineProvider> */}
     </>
   )
 }

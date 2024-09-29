@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-    <h1 className='text-center text-yellow-300 text-7xl mt-8 font-bold'>Lets try!       
+    <h1 className='text-center text-yellow-300 text-5xl mt-8 font-bold'>Lets try, Extract Text from your image!       
     </h1>
     <span className="flex items-center justify-center mt-4">
         {/* Example GIF */}

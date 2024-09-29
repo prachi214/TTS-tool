@@ -16,6 +16,8 @@ This project is a React component that allows users to upload images, extract te
 - **Tesseract.js**: Library that allows text extraction (OCR) from images.
 - **TypeScript**: Static type checker for JavaScript.
 - **Tailwind CSS**: Utility-first CSS framework for styling.
+- **Magic UI**: - A library for animated effects and visual enhancements.
+- **@tabler/icons-react**: A collection of free open-source icons for React.
   
 ## Libraries Used
 

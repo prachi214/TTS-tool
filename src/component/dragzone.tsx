@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
+
 import { Group, Text, Card,rem } from '@mantine/core';
 import { CopyButton, Button } from '@mantine/core';
 import { IconUpload, IconPhoto, IconX } from '@tabler/icons-react';
 import { Dropzone, DropzoneProps, IMAGE_MIME_TYPE } from '@mantine/dropzone';
 import Tesseract from 'tesseract.js';
+
 
 export function Dragger(props: Partial<DropzoneProps>) {
   const [text, setText] = useState<string>('');
@@ -31,9 +33,9 @@ export function Dragger(props: Partial<DropzoneProps>) {
     <>
 
 
-<div className=" w-[50vw] flex flex-col m-32 items-center  justify-center space-y-8 border-4 border-b-cyan-100 rounded-br-lg p-8 rounded-t-lg transition-transform duration-300ms ease-in-out hover:!scale-[1.02] hover:!shadow-[0_0_10px_1px_#e7f52c] ">
+<div className=" w-[90vw] sm:w-[60vw] flex flex-col  m-32 items-center  justify-center space-y-8 border-4 border-b-cyan-100 rounded-br-lg p-8 rounded-t-lg transition-transform duration-300ms ease-in-out hover:!scale-[1.02] hover:!shadow-[0_0_10px_1px_#e7f52c] md:max-w-2xl md:m-10 ">
  
- <Card shadow="sm" padding="lg" radius="md" withBorder className='border-2 border-indigo-500/100 rounded-lg p-8 cursor-pointer delay-150 mt-4 text-white '>
+ <Card shadow="sm" padding="lg" radius="md" withBorder className='border-2 border-indigo-500/100 rounded-lg p-8 cursor-pointer delay-150 mt-4 text-white md:flex'>
    <Card.Section>
      <Dropzone
        onDrop={handleDrop}
@@ -63,10 +65,10 @@ export function Dragger(props: Partial<DropzoneProps>) {
          </Dropzone.Idle>
 
          <div>
-           <Text size="xl" inline>
+           <Text size="4xl" inline>
              Drag images here or click to select files
            </Text>
-           <Text size="sm" c="dimmed" inline mt={7}>
+           <Text size="xl" c="dimmed" inline mt={7}>
              Attach as many files as you like, <span className='text-red-400'>each file should not exceed 5mb</span>
            </Text>
          </div>
@@ -79,7 +81,7 @@ export function Dragger(props: Partial<DropzoneProps>) {
  <Card shadow="sm" padding="lg" radius="md" withBorder>
    <Card.Section>
      {loading ? (
-       <Text align="center" className="text-blue-500">
+       <Text align="center" className="text-yellow-200">
          Processing image...
        </Text>
      ) : text ? (
@@ -110,7 +112,7 @@ export function Dragger(props: Partial<DropzoneProps>) {
        </div>
      ) : (
       <div className='text-slate-50'>
-       <Text align="center" c="dimmed" className='!text-white-500'>
+       <Text align="center" c="dimmed" className='!text-white-500' size='lg'>
          No text extracted yet. Upload an image to see the extracted text here.
        </Text>
       </div>
@@ -118,8 +120,8 @@ export function Dragger(props: Partial<DropzoneProps>) {
      )}
    </Card.Section>
  </Card>
-</div>
 
+</div>
 
 
   </>

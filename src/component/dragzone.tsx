@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 import { Group, Text, Card,rem } from '@mantine/core';
 import { CopyButton, Button } from '@mantine/core';

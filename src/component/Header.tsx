@@ -9,8 +9,8 @@ const handleClick=()=>{
   }
 }
   return links.map((link, index)=>{
-    return <a key={index}  onClick={handleClick} className={`${col?'flex flex-col items-center':''} text-textColor text-ld font-mono hover:text-primaryColor`} href={`#${link}`} underline="never">
-<span className='text-primaryColor'>0{index+1}. </span>{link}
+    return <a key={index}  onClick={handleClick} className={`${col?'flex flex-row items-center':''} text-textColor text-ld font-mono hover:text-primaryColor`} href={`#${link}`}>
+<span className='text-primaryColor'>0{index+1}. &nbsp; </span>{link}
       </a>
   })
 }
@@ -35,13 +35,10 @@ const Header=()=>{
 <nav className={`flex ${show?"":"hidden"}  fixed w-full z-10 bg-bgColor h-[15vh] px-10   justify-between items-center`}>
 <IconAlignBoxLeftMiddle className="z-40" size={68} color='#64FFDA' stroke={1.25}/>
   
-    <div className="md:flex gap-8 hidden">
-{navLinks()}
-    </div>
+{navLinks(true,null)}
 
 </nav>
     );
 }
 
 export default Header;
-export {navLinks}

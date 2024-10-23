@@ -6,6 +6,11 @@ export default {
   ],
   theme: {
     extend: {
+      colors: {
+        bgColor: "#112240",
+        primaryColor: "#64FFDA",
+        textColor: "#889280"
+      },
       animation: {
         orbit: "orbit calc(var(--duration)*1s) linear infinite",
       },
